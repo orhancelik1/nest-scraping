@@ -27,6 +27,7 @@ export class AmazonService {
             )?.textContent;
             const price = searchResult.querySelector('a-price a-offscreen')
               ?.textContent;
+            console.log(url, title, price);
             return {
               url,
               title,
